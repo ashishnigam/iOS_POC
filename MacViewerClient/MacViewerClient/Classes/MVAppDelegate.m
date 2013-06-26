@@ -8,9 +8,9 @@
 
 #import "MVAppDelegate.h"
 
-#import "MVMasterViewController.h"
+#import "MVSystemDiscoveryViewController.h"
 
-#import "MVDetailViewController.h"
+#import "MVSystemViewerViewController.h"
 
 @implementation MVAppDelegate
 
@@ -27,14 +27,14 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        MVMasterViewController *masterViewController = [[[MVMasterViewController alloc] initWithNibName:@"MVMasterViewController_iPhone" bundle:nil] autorelease];
+        MVSystemDiscoveryViewController *masterViewController = [[[MVSystemDiscoveryViewController alloc] initWithNibName:@"MVMasterViewController_iPhone" bundle:nil] autorelease];
         self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
         self.window.rootViewController = self.navigationController;
     } else {
-        MVMasterViewController *masterViewController = [[[MVMasterViewController alloc] initWithNibName:@"MVMasterViewController_iPad" bundle:nil] autorelease];
+        MVSystemDiscoveryViewController *masterViewController = [[[MVSystemDiscoveryViewController alloc] initWithNibName:@"MVMasterViewController_iPad" bundle:nil] autorelease];
         UINavigationController *masterNavigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
         
-        MVDetailViewController *detailViewController = [[[MVDetailViewController alloc] initWithNibName:@"MVDetailViewController_iPad" bundle:nil] autorelease];
+        MVSystemViewerViewController *detailViewController = [[[MVSystemViewerViewController alloc] initWithNibName:@"MVDetailViewController_iPad" bundle:nil] autorelease];
         UINavigationController *detailNavigationController = [[[UINavigationController alloc] initWithRootViewController:detailViewController] autorelease];
     	
     	masterViewController.detailViewController = detailViewController;

@@ -12,16 +12,18 @@
 		141F700B1771EA2300E10A59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F700A1771EA2300E10A59 /* CoreGraphics.framework */; };
 		141F70111771EA2400E10A59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 141F700F1771EA2400E10A59 /* InfoPlist.strings */; };
 		141F70131771EA2400E10A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 141F70121771EA2400E10A59 /* main.m */; };
-		141F70171771EA2400E10A59 /* MVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 141F70161771EA2400E10A59 /* MVAppDelegate.m */; };
 		141F70191771EA2400E10A59 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 141F70181771EA2400E10A59 /* Default.png */; };
 		141F701B1771EA2400E10A59 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141F701A1771EA2400E10A59 /* Default@2x.png */; };
 		141F701D1771EA2400E10A59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141F701C1771EA2400E10A59 /* Default-568h@2x.png */; };
-		141F70201771EA2400E10A59 /* MVMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141F701F1771EA2400E10A59 /* MVMasterViewController.m */; };
-		141F70231771EA2400E10A59 /* MVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141F70221771EA2400E10A59 /* MVDetailViewController.m */; };
-		141F70261771EA2400E10A59 /* MVMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F70241771EA2400E10A59 /* MVMasterViewController_iPhone.xib */; };
-		141F70291771EA2400E10A59 /* MVMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F70271771EA2400E10A59 /* MVMasterViewController_iPad.xib */; };
-		141F702C1771EA2400E10A59 /* MVDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F702A1771EA2400E10A59 /* MVDetailViewController_iPhone.xib */; };
-		141F702F1771EA2500E10A59 /* MVDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F702D1771EA2500E10A59 /* MVDetailViewController_iPad.xib */; };
+		141F70261771EA2400E10A59 /* MVSystemDiscoveryViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F70241771EA2400E10A59 /* MVSystemDiscoveryViewController_iPhone.xib */; };
+		141F70291771EA2400E10A59 /* MVSystemDiscoveryViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F70271771EA2400E10A59 /* MVSystemDiscoveryViewController_iPad.xib */; };
+		141F702C1771EA2400E10A59 /* MVSystemViewerViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F702A1771EA2400E10A59 /* MVSystemViewerViewController_iPhone.xib */; };
+		141F702F1771EA2500E10A59 /* MVSystemViewerViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F702D1771EA2500E10A59 /* MVSystemViewerViewController_iPad.xib */; };
+		14E2198F177B26FE002217D7 /* MVSystemDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2198C177B26FE002217D7 /* MVSystemDiscoveryViewController.m */; };
+		14E21990177B26FE002217D7 /* MVSystemViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2198E177B26FE002217D7 /* MVSystemViewerViewController.m */; };
+		14E219CF177B280E002217D7 /* MVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E219CE177B280E002217D7 /* MVAppDelegate.m */; };
+		14E219DD177B28F3002217D7 /* MVSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E219DB177B28F3002217D7 /* MVSettingsViewController.m */; };
+		14E219E0177B2918002217D7 /* MVSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E219DF177B2918002217D7 /* MVSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,19 +35,22 @@
 		141F70101771EA2400E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		141F70121771EA2400E10A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		141F70141771EA2400E10A59 /* MacViewerClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacViewerClient-Prefix.pch"; sourceTree = "<group>"; };
-		141F70151771EA2400E10A59 /* MVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVAppDelegate.h; sourceTree = "<group>"; };
-		141F70161771EA2400E10A59 /* MVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVAppDelegate.m; sourceTree = "<group>"; };
 		141F70181771EA2400E10A59 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		141F701A1771EA2400E10A59 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		141F701C1771EA2400E10A59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		141F701E1771EA2400E10A59 /* MVMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVMasterViewController.h; sourceTree = "<group>"; };
-		141F701F1771EA2400E10A59 /* MVMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVMasterViewController.m; sourceTree = "<group>"; };
-		141F70211771EA2400E10A59 /* MVDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDetailViewController.h; sourceTree = "<group>"; };
-		141F70221771EA2400E10A59 /* MVDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVDetailViewController.m; sourceTree = "<group>"; };
-		141F70251771EA2400E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVMasterViewController_iPhone.xib; sourceTree = "<group>"; };
-		141F70281771EA2400E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVMasterViewController_iPad.xib; sourceTree = "<group>"; };
-		141F702B1771EA2400E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVDetailViewController_iPhone.xib; sourceTree = "<group>"; };
-		141F702E1771EA2500E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		141F70251771EA2400E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVSystemDiscoveryViewController_iPhone.xib; sourceTree = "<group>"; };
+		141F70281771EA2400E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVSystemDiscoveryViewController_iPad.xib; sourceTree = "<group>"; };
+		141F702B1771EA2400E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVSystemViewerViewController_iPhone.xib; sourceTree = "<group>"; };
+		141F702E1771EA2500E10A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVSystemViewerViewController_iPad.xib; sourceTree = "<group>"; };
+		14E2198B177B26FE002217D7 /* MVSystemDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSystemDiscoveryViewController.h; sourceTree = "<group>"; };
+		14E2198C177B26FE002217D7 /* MVSystemDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSystemDiscoveryViewController.m; sourceTree = "<group>"; };
+		14E2198D177B26FE002217D7 /* MVSystemViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSystemViewerViewController.h; sourceTree = "<group>"; };
+		14E2198E177B26FE002217D7 /* MVSystemViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSystemViewerViewController.m; sourceTree = "<group>"; };
+		14E219CD177B280E002217D7 /* MVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAppDelegate.h; sourceTree = "<group>"; };
+		14E219CE177B280E002217D7 /* MVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAppDelegate.m; sourceTree = "<group>"; };
+		14E219DA177B28F3002217D7 /* MVSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSettingsViewController.h; sourceTree = "<group>"; };
+		14E219DB177B28F3002217D7 /* MVSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSettingsViewController.m; sourceTree = "<group>"; };
+		14E219DF177B2918002217D7 /* MVSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MVSettingsViewController.xib; path = Xibs/MVSettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,16 +97,8 @@
 		141F700C1771EA2300E10A59 /* MacViewerClient */ = {
 			isa = PBXGroup;
 			children = (
-				141F70151771EA2400E10A59 /* MVAppDelegate.h */,
-				141F70161771EA2400E10A59 /* MVAppDelegate.m */,
-				141F701E1771EA2400E10A59 /* MVMasterViewController.h */,
-				141F701F1771EA2400E10A59 /* MVMasterViewController.m */,
-				141F70211771EA2400E10A59 /* MVDetailViewController.h */,
-				141F70221771EA2400E10A59 /* MVDetailViewController.m */,
-				141F70241771EA2400E10A59 /* MVMasterViewController_iPhone.xib */,
-				141F70271771EA2400E10A59 /* MVMasterViewController_iPad.xib */,
-				141F702A1771EA2400E10A59 /* MVDetailViewController_iPhone.xib */,
-				141F702D1771EA2500E10A59 /* MVDetailViewController_iPad.xib */,
+				14E2198A177B26FE002217D7 /* Classes */,
+				14E219CC177B27DA002217D7 /* Xibs */,
 				141F700D1771EA2300E10A59 /* Supporting Files */,
 			);
 			path = MacViewerClient;
@@ -119,6 +116,33 @@
 				141F701C1771EA2400E10A59 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14E2198A177B26FE002217D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14E219CD177B280E002217D7 /* MVAppDelegate.h */,
+				14E219CE177B280E002217D7 /* MVAppDelegate.m */,
+				14E2198B177B26FE002217D7 /* MVSystemDiscoveryViewController.h */,
+				14E2198C177B26FE002217D7 /* MVSystemDiscoveryViewController.m */,
+				14E2198D177B26FE002217D7 /* MVSystemViewerViewController.h */,
+				14E2198E177B26FE002217D7 /* MVSystemViewerViewController.m */,
+				14E219DA177B28F3002217D7 /* MVSettingsViewController.h */,
+				14E219DB177B28F3002217D7 /* MVSettingsViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14E219CC177B27DA002217D7 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				14E219DF177B2918002217D7 /* MVSettingsViewController.xib */,
+				141F70241771EA2400E10A59 /* MVSystemDiscoveryViewController_iPhone.xib */,
+				141F70271771EA2400E10A59 /* MVSystemDiscoveryViewController_iPad.xib */,
+				141F702A1771EA2400E10A59 /* MVSystemViewerViewController_iPhone.xib */,
+				141F702D1771EA2500E10A59 /* MVSystemViewerViewController_iPad.xib */,
+			);
+			name = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +201,11 @@
 				141F70191771EA2400E10A59 /* Default.png in Resources */,
 				141F701B1771EA2400E10A59 /* Default@2x.png in Resources */,
 				141F701D1771EA2400E10A59 /* Default-568h@2x.png in Resources */,
-				141F70261771EA2400E10A59 /* MVMasterViewController_iPhone.xib in Resources */,
-				141F70291771EA2400E10A59 /* MVMasterViewController_iPad.xib in Resources */,
-				141F702C1771EA2400E10A59 /* MVDetailViewController_iPhone.xib in Resources */,
-				141F702F1771EA2500E10A59 /* MVDetailViewController_iPad.xib in Resources */,
+				141F70261771EA2400E10A59 /* MVSystemDiscoveryViewController_iPhone.xib in Resources */,
+				141F70291771EA2400E10A59 /* MVSystemDiscoveryViewController_iPad.xib in Resources */,
+				141F702C1771EA2400E10A59 /* MVSystemViewerViewController_iPhone.xib in Resources */,
+				141F702F1771EA2500E10A59 /* MVSystemViewerViewController_iPad.xib in Resources */,
+				14E219E0177B2918002217D7 /* MVSettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				141F70131771EA2400E10A59 /* main.m in Sources */,
-				141F70171771EA2400E10A59 /* MVAppDelegate.m in Sources */,
-				141F70201771EA2400E10A59 /* MVMasterViewController.m in Sources */,
-				141F70231771EA2400E10A59 /* MVDetailViewController.m in Sources */,
+				14E2198F177B26FE002217D7 /* MVSystemDiscoveryViewController.m in Sources */,
+				14E21990177B26FE002217D7 /* MVSystemViewerViewController.m in Sources */,
+				14E219CF177B280E002217D7 /* MVAppDelegate.m in Sources */,
+				14E219DD177B28F3002217D7 /* MVSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,36 +235,36 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		141F70241771EA2400E10A59 /* MVMasterViewController_iPhone.xib */ = {
+		141F70241771EA2400E10A59 /* MVSystemDiscoveryViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				141F70251771EA2400E10A59 /* en */,
 			);
-			name = MVMasterViewController_iPhone.xib;
+			name = MVSystemDiscoveryViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		141F70271771EA2400E10A59 /* MVMasterViewController_iPad.xib */ = {
+		141F70271771EA2400E10A59 /* MVSystemDiscoveryViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				141F70281771EA2400E10A59 /* en */,
 			);
-			name = MVMasterViewController_iPad.xib;
+			name = MVSystemDiscoveryViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
-		141F702A1771EA2400E10A59 /* MVDetailViewController_iPhone.xib */ = {
+		141F702A1771EA2400E10A59 /* MVSystemViewerViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				141F702B1771EA2400E10A59 /* en */,
 			);
-			name = MVDetailViewController_iPhone.xib;
+			name = MVSystemViewerViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		141F702D1771EA2500E10A59 /* MVDetailViewController_iPad.xib */ = {
+		141F702D1771EA2500E10A59 /* MVSystemViewerViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				141F702E1771EA2500E10A59 /* en */,
 			);
-			name = MVDetailViewController_iPad.xib;
+			name = MVSystemViewerViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,6 +367,7 @@
 				141F70341771EA2500E10A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

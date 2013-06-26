@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class MVDetailViewController;
+@class MVSystemViewerViewController;
 
-@interface MVMasterViewController : UITableViewController
+@interface MVSystemDiscoveryViewController : UITableViewController
 
-@property (strong, nonatomic) MVDetailViewController *detailViewController;
+@property (strong, nonatomic) MVSystemViewerViewController *detailViewController;
 
 @end

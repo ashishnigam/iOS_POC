@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 Ashish Nigam. All rights reserved.
 //
 
-#import "MVDetailViewController.h"
+#import "MVSystemViewerViewController.h"
 
-@interface MVDetailViewController ()
+@interface MVSystemViewerViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 
-@implementation MVDetailViewController
+@implementation MVSystemViewerViewController
 
 - (void)dealloc
 {

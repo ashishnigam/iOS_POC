@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 Ashish Nigam. All rights reserved.
 //
 
-#import "MVMasterViewController.h"
+#import "MVSystemDiscoveryViewController.h"
 
-#import "MVDetailViewController.h"
+#import "MVSystemViewerViewController.h"
 
-@interface MVMasterViewController () {
+@interface MVSystemDiscoveryViewController () {
     NSMutableArray *_objects;
 }
 @end
 
-@implementation MVMasterViewController
+@implementation MVSystemDiscoveryViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -131,7 +131,7 @@
     NSDate *object = _objects[indexPath.row];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    if (!self.detailViewController) {
-	        self.detailViewController = [[[MVDetailViewController alloc] initWithNibName:@"MVDetailViewController_iPhone" bundle:nil] autorelease];
+	        self.detailViewController = [[[MVSystemViewerViewController alloc] initWithNibName:@"MVDetailViewController_iPhone" bundle:nil] autorelease];
 	    }
 	    self.detailViewController.detailItem = object;
         [self.navigationController pushViewController:self.detailViewController animated:YES];
