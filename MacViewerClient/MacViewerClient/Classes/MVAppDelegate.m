@@ -30,6 +30,7 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         MVSystemDiscoveryViewController *masterViewController = [[[MVSystemDiscoveryViewController alloc] initWithNibName:@"MVSystemDiscoveryViewController_iPhone" bundle:nil] autorelease];
         self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+        self.navigationController.navigationBar.barStyle  = UIBarStyleBlackTranslucent;
         self.window.rootViewController = self.navigationController;
     } else {
         MVSystemDiscoveryViewController *masterViewController = [[[MVSystemDiscoveryViewController alloc] initWithNibName:@"MVMasterViewController_iPad" bundle:nil] autorelease];
