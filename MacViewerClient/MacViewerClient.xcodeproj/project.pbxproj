@@ -51,6 +51,7 @@
 		14E219DA177B28F3002217D7 /* MVSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSettingsViewController.h; sourceTree = "<group>"; };
 		14E219DB177B28F3002217D7 /* MVSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSettingsViewController.m; sourceTree = "<group>"; };
 		14E219DF177B2918002217D7 /* MVSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MVSettingsViewController.xib; path = Xibs/MVSettingsViewController.xib; sourceTree = "<group>"; };
+		C13234011780975400AD0373 /* MVDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 		14E2198A177B26FE002217D7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C13234001780973600AD0373 /* MVConstant */,
 				14E219CD177B280E002217D7 /* MVAppDelegate.h */,
 				14E219CE177B280E002217D7 /* MVAppDelegate.m */,
 				14E2198B177B26FE002217D7 /* MVSystemDiscoveryViewController.h */,
@@ -143,6 +145,14 @@
 				141F702D1771EA2500E10A59 /* MVSystemViewerViewController_iPad.xib */,
 			);
 			name = Xibs;
+			sourceTree = "<group>";
+		};
+		C13234001780973600AD0373 /* MVConstant */ = {
+			isa = PBXGroup;
+			children = (
+				C13234011780975400AD0373 /* MVDefines.h */,
+			);
+			path = MVConstant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

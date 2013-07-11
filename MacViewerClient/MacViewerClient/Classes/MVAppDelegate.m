@@ -28,7 +28,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        MVSystemDiscoveryViewController *masterViewController = [[[MVSystemDiscoveryViewController alloc] initWithNibName:@"MVMasterViewController_iPhone" bundle:nil] autorelease];
+        MVSystemDiscoveryViewController *masterViewController = [[[MVSystemDiscoveryViewController alloc] initWithNibName:@"MVSystemDiscoveryViewController_iPhone" bundle:nil] autorelease];
         self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
         self.window.rootViewController = self.navigationController;
     } else {

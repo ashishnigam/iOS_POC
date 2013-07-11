@@ -2,16 +2,16 @@
 //  MVMasterViewController.m
 //  MacViewerClient
 //
-//  Created by Ashish Nigam on 6/19/13.
-//  Copyright (c) 2013 Ashish Nigam. All rights reserved.
-//
 
+#import "MVConstant/MVDefines.h"
 #import "MVSystemDiscoveryViewController.h"
-
 #import "MVSystemViewerViewController.h"
 
+#define IPInputTextViewHeight         44u
+#define IPInputTextFieldHeight        30u
+
 @interface MVSystemDiscoveryViewController () {
-    NSMutableArray *_objects;
+    
 }
 @end
 
@@ -33,7 +33,6 @@
 - (void)dealloc
 {
     [_detailViewController release];
-    [_objects release];
     [super dealloc];
 }
 
@@ -41,9 +40,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)] autorelease];
+    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertHostInputTextView:)] autorelease];
     self.navigationItem.rightBarButtonItem = addButton;
 }
 
@@ -53,14 +51,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender
+- (void)insertHostInputTextView:(id)sender
 {
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
+    if (!self.hostInputTextView) {
+        CGRect bound = _viewBound();
+        UIView* hostInputTextView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_ORIGIN_X, SCREEN_ORIGIN_Y, bound.size.width, IPInputTextViewHeight)];
+        bound.origin.x = 10;
+        bound.origin.y = 7;
+        bound.size.width -= 40;
+        UITextField* IPInputTextField = [[UITextField alloc] initWithFrame:CGRectMake(bound.origin.x, bound.origin.y, bound.size.width, IPInputTextFieldHeight)];
+        IPInputTextField.borderStyle = UITextBorderStyleRoundedRect;
+        [hostInputTextView addSubview:IPInputTextField];
+        hostInputTextView.backgroundColor = [UIColor blackColor];
+        hostInputTextView.opaque = true;
+        [self.view addSubview:hostInputTextView];
+        [self setHostInputTextView:hostInputTextView];
+        [hostInputTextView release];
+        [IPInputTextField release];
+       
     }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table View
@@ -72,7 +81,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return 10;
 }
 
 // Customize the appearance of table view cells.
@@ -88,56 +97,11 @@
         }
     }
 
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
-}
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = _objects[indexPath.row];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    if (!self.detailViewController) {
-	        self.detailViewController = [[[MVSystemViewerViewController alloc] initWithNibName:@"MVDetailViewController_iPhone" bundle:nil] autorelease];
-	    }
-	    self.detailViewController.detailItem = object;
-        [self.navigationController pushViewController:self.detailViewController animated:YES];
-    } else {
-        self.detailViewController.detailItem = object;
-    }
 }
 
 @end
