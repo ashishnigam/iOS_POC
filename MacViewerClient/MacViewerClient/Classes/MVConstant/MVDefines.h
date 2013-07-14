@@ -11,8 +11,14 @@
 #define SCREEN_ORIGIN_X             0
 #define SCREEN_ORIGIN_Y             0
 
-#pragma FUNCTION MACRO
+#pragma MACRO FUNCTION  VIEW COARDINATE SYSTEM
 
-#define _viewBound()                self.view.bounds
+#define         _viewBound()                self.view.bounds
+
+#pragma MACRO FUNCTION MEMORY MANAGMENT
+
+#define     _ReleaseObject(object)          { [object release]; object = nil; }
+#define     _ReleaseObjectWithCheck(object) if(object)  { _ReleaseObject (object) } 
+
 
 #endif

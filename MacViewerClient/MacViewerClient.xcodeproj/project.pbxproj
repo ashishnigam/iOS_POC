@@ -24,6 +24,7 @@
 		14E219CF177B280E002217D7 /* MVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E219CE177B280E002217D7 /* MVAppDelegate.m */; };
 		14E219DD177B28F3002217D7 /* MVSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E219DB177B28F3002217D7 /* MVSettingsViewController.m */; };
 		14E219E0177B2918002217D7 /* MVSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E219DF177B2918002217D7 /* MVSettingsViewController.xib */; };
+		C1BD636B17925EFC00771E56 /* MVBonjourService.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BD636A17925EFC00771E56 /* MVBonjourService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		14E219DB177B28F3002217D7 /* MVSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSettingsViewController.m; sourceTree = "<group>"; };
 		14E219DF177B2918002217D7 /* MVSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MVSettingsViewController.xib; path = Xibs/MVSettingsViewController.xib; sourceTree = "<group>"; };
 		C13234011780975400AD0373 /* MVDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDefines.h; sourceTree = "<group>"; };
+		C1BD636917925EFC00771E56 /* MVBonjourService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVBonjourService.h; sourceTree = "<group>"; };
+		C1BD636A17925EFC00771E56 /* MVBonjourService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVBonjourService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 		14E2198A177B26FE002217D7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C1BD636817925E8600771E56 /* MVNetworkService */,
 				C13234001780973600AD0373 /* MVConstant */,
 				14E219CD177B280E002217D7 /* MVAppDelegate.h */,
 				14E219CE177B280E002217D7 /* MVAppDelegate.m */,
@@ -153,6 +157,15 @@
 				C13234011780975400AD0373 /* MVDefines.h */,
 			);
 			path = MVConstant;
+			sourceTree = "<group>";
+		};
+		C1BD636817925E8600771E56 /* MVNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				C1BD636917925EFC00771E56 /* MVBonjourService.h */,
+				C1BD636A17925EFC00771E56 /* MVBonjourService.m */,
+			);
+			path = MVNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +244,7 @@
 				14E21990177B26FE002217D7 /* MVSystemViewerViewController.m in Sources */,
 				14E219CF177B280E002217D7 /* MVAppDelegate.m in Sources */,
 				14E219DD177B28F3002217D7 /* MVSettingsViewController.m in Sources */,
+				C1BD636B17925EFC00771E56 /* MVBonjourService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

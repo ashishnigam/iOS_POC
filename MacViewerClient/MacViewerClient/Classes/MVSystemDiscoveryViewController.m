@@ -3,14 +3,14 @@
 //  MacViewerClient
 //
 
-#import "MVConstant/MVDefines.h"
+#import "MVBonjourService.h"
 #import "MVSystemDiscoveryViewController.h"
 #import "MVSystemViewerViewController.h"
 
 #define IPInputTextViewHeight         44u
 #define IPInputTextFieldHeight        30u
 
-@interface MVSystemDiscoveryViewController ()
+@interface MVSystemDiscoveryViewController ()<MVBonjourServiceDelegate>
 
 - (void) addNavigationBarButton;
 
@@ -99,4 +99,13 @@
 {
 }
 
+#pragma mark - Bonjour Service Delegates
+- (void) bonjourBrowseService:(MVBonjourService*)browseService didUpdateWithServiceList:(NSArray*)serviceList
+{
+    
+}
+- (void) bonjourBrowseService:(MVBonjourService*)browseService didFailWithError:(NSDictionary *)error
+{
+    
+}
 @end
