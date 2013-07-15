@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0346228417940D34001FB0FC /* MVHostStreamService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0346228317940D34001FB0FC /* MVHostStreamService.m */; };
 		141F70071771EA2300E10A59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F70061771EA2300E10A59 /* UIKit.framework */; };
 		141F70091771EA2300E10A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F70081771EA2300E10A59 /* Foundation.framework */; };
 		141F700B1771EA2300E10A59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F700A1771EA2300E10A59 /* CoreGraphics.framework */; };
@@ -28,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0346228217940D34001FB0FC /* MVHostStreamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVHostStreamService.h; sourceTree = "<group>"; };
+		0346228317940D34001FB0FC /* MVHostStreamService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVHostStreamService.m; sourceTree = "<group>"; };
+		0346228B17941400001FB0FC /* MVEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVEnum.h; sourceTree = "<group>"; };
 		141F70031771EA2300E10A59 /* MacViewerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacViewerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		141F70061771EA2300E10A59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		141F70081771EA2300E10A59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C13234011780975400AD0373 /* MVDefines.h */,
+				0346228B17941400001FB0FC /* MVEnum.h */,
 			);
 			path = MVConstant;
 			sourceTree = "<group>";
@@ -164,6 +169,8 @@
 			children = (
 				C1BD636917925EFC00771E56 /* MVBonjourService.h */,
 				C1BD636A17925EFC00771E56 /* MVBonjourService.m */,
+				0346228217940D34001FB0FC /* MVHostStreamService.h */,
+				0346228317940D34001FB0FC /* MVHostStreamService.m */,
 			);
 			path = MVNetworkService;
 			sourceTree = "<group>";
@@ -245,6 +252,7 @@
 				14E219CF177B280E002217D7 /* MVAppDelegate.m in Sources */,
 				14E219DD177B28F3002217D7 /* MVSettingsViewController.m in Sources */,
 				C1BD636B17925EFC00771E56 /* MVBonjourService.m in Sources */,
+				0346228417940D34001FB0FC /* MVHostStreamService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +364,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacViewerClient/MacViewerClient-Prefix.pch";
 				INFOPLIST_FILE = "MacViewerClient/MacViewerClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -367,6 +376,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacViewerClient/MacViewerClient-Prefix.pch";
 				INFOPLIST_FILE = "MacViewerClient/MacViewerClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -12,11 +12,14 @@
 
 @interface MVSystemDiscoveryViewController ()<MVBonjourServiceDelegate>
 
+@property (nonatomic, retain)MVBonjourService           *bonjurService;
 - (void) addNavigationBarButton;
 
 @end
 
 @implementation MVSystemDiscoveryViewController
+
+@synthesize bonjurService;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -108,4 +111,14 @@
 {
     
 }
+
+- (void) bonjourBrowseService:(MVBonjourService*)browseService didResolveService:(NSNetService *)service
+{
+    
+}
+- (void) bonjourBrowseService:(MVBonjourService*)browseService didNotResolve:(NSDictionary *)errorDict
+{
+    
+}
+
 @end
