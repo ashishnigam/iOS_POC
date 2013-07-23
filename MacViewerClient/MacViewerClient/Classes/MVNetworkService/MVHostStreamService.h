@@ -3,10 +3,16 @@
 //  MacViewerClient
 //
 
+@protocol MVHostStreamConnecting;
 
 @interface MVHostStreamService : NSObject
 
-- (ENetworkServiceResult) connectHostForServerString:(NSString *)serverString withOptions:(NSDictionary *)options;
+@property (nonatomic, retain)NSData*        hostAddress;
+@property (nonatomic, retain)NSString*      hostName;
+@property (nonatomic, assign)id<MVHostStreamConnecting> delegate;
+
+- (id) initWithDelegate:(id)deleagte;
+- (ENetworkServiceResult) connectHostForAddressString:(NSString *)addressString withOptions:(NSDictionary *)options;
 
 @end
 
